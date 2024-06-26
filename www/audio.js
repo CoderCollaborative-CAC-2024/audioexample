@@ -19,17 +19,6 @@ $(document).ready(function() {
   });
 });
 
-Shiny.addCustomMessageHandler("startRecording", function(message) {
-  if (!recording) {
-    startRecording();
-  }
-});
-
-Shiny.addCustomMessageHandler("stopRecording", function(message) {
-  if (recording) {
-    stopRecording();
-  }
-});
 
 function startRecording() {
   recording = true;
